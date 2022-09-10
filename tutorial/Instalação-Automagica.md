@@ -1,5 +1,13 @@
 # Tutorial Descomplicando Prometheus - Parte II - Instalação Automágica
-## Utilizando o autoInstall:
+
+## Utilizando _wget_: 
+
+1. No seu terminal digite:  
+_curl https://raw.githubusercontent.com/dilons/DescomplicandoPrometheus/main/tutorial/autoInstall-prometheus.sh | bash_ 
+2. Informe a sua senha de administrador, e o script será executado, onde o prometheus será instalado, inicializado e configurado
+
+
+## Utilizando o _autoInstall_:
  	
 1. Realize o download do script [autoInstall-prometheus.sh](https://github.com/dilons/DescomplicandoPrometheus/blob/main/tutorial/autoInstall-prometheus.sh)
 2. Adicione permissão de execução através do comando: _chmod +x autoInstall-prometheus.sh_
