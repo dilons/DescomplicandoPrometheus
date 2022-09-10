@@ -4,11 +4,11 @@ echo "curl -LO https://github.com/prometheus/prometheus/releases/download/v2.38.
 curl -s https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz >> /tmp/prometheus-2.38.0.linux-amd64.tar.gz
 echo "Download Concluido, iniciando processo de configuracao..."
 echo "tar -xvf /tmp/prometheus-2.38.0.linux-amd64.tar.gz"
-tar -xvf prometheus-2.38.0.linux-amd64.tar.gz
-echo "sudo mv prometheus-2.38.0.linux-amd64/prometheus /usr/local/bin/prometheus"
-sudo mv prometheus-2.38.0.linux-amd64/prometheus /usr/local/bin/prometheus
-echo "sudo mv prometheus-2.38.0.linux-amd64/promtool /usr/local/bin/promtool"
-sudo mv prometheus-2.38.0.linux-amd64/promtool /usr/local/bin/promtool
+tar -xvf /tmp/prometheus-2.38.0.linux-amd64.tar.gz . 
+echo "sudo mv /tmp/prometheus-2.38.0.linux-amd64/prometheus /usr/local/bin/prometheus"
+sudo mv /tmp/prometheus-2.38.0.linux-amd64/prometheus /usr/local/bin/prometheus
+echo "sudo mv /tmp/prometheus-2.38.0.linux-amd64/promtool /usr/local/bin/promtool"
+sudo mv /tmp/prometheus-2.38.0.linux-amd64/promtool /usr/local/bin/promtool
 echo "Prometheus e Promtool movidos para a pasta /usr/local/bin"
 
 echo "Criando diretorio de configuracao"
