@@ -4,7 +4,7 @@ echo "wget -q https://github.com/prometheus/prometheus/releases/download/v2.38.0
 wget -q https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz  /tmp/
 echo "Download Concluido, iniciando processo de configuracao..."
 echo "tar -xvf /tmp/prometheus-2.38.0.linux-amd64.tar.gz"
-tar -xvf /tmp/prometheus-2.38.0.linux-amd64.tar.gz . 
+tar -xvf /tmp/prometheus-2.38.0.linux-amd64.tar.gz 
 echo "sudo mv /tmp/prometheus-2.38.0.linux-amd64/prometheus /usr/local/bin/prometheus"
 sudo mv /tmp/prometheus-2.38.0.linux-amd64/prometheus /usr/local/bin/prometheus
 echo "sudo mv /tmp/prometheus-2.38.0.linux-amd64/promtool /usr/local/bin/promtool"
