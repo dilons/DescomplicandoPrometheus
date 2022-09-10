@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
+cd /tmp
 echo "Realizando o Donwload do Prometheus v2.38"
-echo "wget https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz -o /tmp/prometheus-2.38.0.linux-amd64.tar.gz"
-wget  https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz -o /tmp/prometheus-2.38.0.linux-amd64.tar.gz
+echo "sudo wget https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz"
+sudo wget https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz 
 echo "Download Concluido, iniciando processo de configuracao..."
 echo "tar -xvf /tmp/prometheus-2.38.0.linux-amd64.tar.gz"
-tar -xvf /tmp/prometheus-2.38.0.linux-amd64.tar.gz
+sudo tar -xvf /tmp/prometheus-2.38.0.linux-amd64.tar.gz
 echo "sudo mv /tmp/prometheus-2.38.0.linux-amd64/prometheus /usr/local/bin/prometheus"
 sudo mv /tmp/prometheus-2.38.0.linux-amd64/prometheus /usr/local/bin/prometheus
 echo "sudo mv /tmp/prometheus-2.38.0.linux-amd64/promtool /usr/local/bin/promtool"
