@@ -4,7 +4,7 @@
 
 1. No seu terminal digite:  
 _curl https://raw.githubusercontent.com/dilons/DescomplicandoPrometheus/main/tutorial/autoInstall-prometheus.sh | bash_ 
-2. Informe a sua senha de administrador, e o script será executado, onde o prometheus será instalado, inicializado e configurado
+2. Com isso, o prometheus será instalado e configurado no seu sistema á partido do script [autoInstall-prometheus.sh](https://github.com/dilons/DescomplicandoPrometheus/blob/main/tutorial/autoInstall-prometheus.sh)
 
 
 ## Utilizando o _autoInstall_:
