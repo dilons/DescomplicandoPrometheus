@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "Realizando o Donwload do Prometheus v2.38"
-echo "wget -q https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz /tmp/prometheus-2.38.0.linux-amd64.tar.gz"
-wget -q https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz  /tmp/prometheus-2.38.0.linux-amd64.tar.gz
+echo "wget https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz -o /tmp/prometheus-2.38.0.linux-amd64.tar.gz"
+wget  https://github.com/prometheus/prometheus/releases/download/v2.38.0/prometheus-2.38.0.linux-amd64.tar.gz -o /tmp/prometheus-2.38.0.linux-amd64.tar.gz
 echo "Download Concluido, iniciando processo de configuracao..."
 echo "tar -xvf /tmp/prometheus-2.38.0.linux-amd64.tar.gz"
 tar -xvf /tmp/prometheus-2.38.0.linux-amd64.tar.gz
