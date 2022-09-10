@@ -17,7 +17,7 @@ sudo mkdir /etc/prometheus
 echo "Realizando download dos arquivos de configuracao"
 echo "curl -s https://raw.githubusercontent.com/dilons/DescomplicandoPrometheus/main/conf/prometheus.service | sudo tee /etc/systemd/system/prometheus.service"
 curl -s https://raw.githubusercontent.com/dilons/DescomplicandoPrometheus/main/conf/prometheus.service | sudo tee  /etc/systemd/system/prometheus.service >> /dev/null
-echo "curl -s -LO https://raw.githubusercontent.com/dilons/DescomplicandoPrometheus/main/conf/prometheus.yml | sudo tee  /etc/prometheus/prometheus.yml"
+echo "curl -s https://raw.githubusercontent.com/dilons/DescomplicandoPrometheus/main/conf/prometheus.yml | sudo tee  /etc/prometheus/prometheus.yml"
 curl -s https://raw.githubusercontent.com/dilons/DescomplicandoPrometheus/main/conf/prometheus.yml | sudo tee /etc/prometheus/prometheus.yml >> /dev/null
 
 echo "Criando diretorio de dados Prometheus"
